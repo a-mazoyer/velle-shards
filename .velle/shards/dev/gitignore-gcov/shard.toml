@@ -1,0 +1,9 @@
+name        = "dev/gitignore-gcov"
+description = "Append gitignore rules for Gcov"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Gcov.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

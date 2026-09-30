@@ -1,0 +1,9 @@
+name        = "dev/gitignore-calabash"
+description = "Append gitignore rules for Calabash"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Calabash.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

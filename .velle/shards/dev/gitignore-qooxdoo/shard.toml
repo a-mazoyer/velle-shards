@@ -1,0 +1,9 @@
+name        = "dev/gitignore-qooxdoo"
+description = "Append gitignore rules for Qooxdoo"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Qooxdoo.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

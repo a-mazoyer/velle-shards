@@ -1,0 +1,9 @@
+name        = "dev/gitignore-yii"
+description = "Append gitignore rules for Yii"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Yii.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-vba"
+description = "Append gitignore rules for VBA"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/VBA.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

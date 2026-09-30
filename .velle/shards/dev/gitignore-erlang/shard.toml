@@ -1,0 +1,9 @@
+name        = "dev/gitignore-erlang"
+description = "Append gitignore rules for Erlang"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Erlang.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

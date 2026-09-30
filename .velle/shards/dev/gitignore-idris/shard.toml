@@ -1,0 +1,9 @@
+name        = "dev/gitignore-idris"
+description = "Append gitignore rules for Idris"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Idris.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

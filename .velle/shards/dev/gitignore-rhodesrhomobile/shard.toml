@@ -1,0 +1,9 @@
+name        = "dev/gitignore-rhodesrhomobile"
+description = "Append gitignore rules for RhodesRhomobile"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/RhodesRhomobile.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

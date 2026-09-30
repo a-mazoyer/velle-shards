@@ -1,0 +1,9 @@
+name        = "dev/gitignore-terraform"
+description = "Append gitignore rules for Terraform"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Terraform.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-julia"
+description = "Append gitignore rules for Julia"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Julia.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-raku"
+description = "Append gitignore rules for Raku"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Raku.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

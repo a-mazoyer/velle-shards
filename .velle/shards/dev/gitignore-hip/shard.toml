@@ -1,0 +1,9 @@
+name        = "dev/gitignore-hip"
+description = "Append gitignore rules for HIP"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/HIP.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-langchain"
+description = "Append gitignore rules for LangChain"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/LangChain.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

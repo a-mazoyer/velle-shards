@@ -1,0 +1,9 @@
+name        = "dev/gitignore-putty"
+description = "Append gitignore rules for PuTTY"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/PuTTY.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

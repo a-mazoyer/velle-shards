@@ -1,0 +1,9 @@
+name        = "dev/gitignore-bun"
+description = "Append gitignore rules for bun"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/bun.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

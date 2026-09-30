@@ -1,0 +1,9 @@
+name        = "dev/gitignore-tortoisegit"
+description = "Append gitignore rules for TortoiseGit"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/TortoiseGit.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

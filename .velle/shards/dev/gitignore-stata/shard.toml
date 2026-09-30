@@ -1,0 +1,9 @@
+name        = "dev/gitignore-stata"
+description = "Append gitignore rules for Stata"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Stata.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

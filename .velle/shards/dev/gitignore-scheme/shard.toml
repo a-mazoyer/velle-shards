@@ -1,0 +1,9 @@
+name        = "dev/gitignore-scheme"
+description = "Append gitignore rules for Scheme"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Scheme.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lilypond"
+description = "Append gitignore rules for Lilypond"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Lilypond.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

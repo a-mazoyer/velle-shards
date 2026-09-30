@@ -1,0 +1,9 @@
+name        = "dev/gitignore-ansible"
+description = "Append gitignore rules for Ansible"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Ansible.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

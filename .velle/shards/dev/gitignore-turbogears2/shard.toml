@@ -1,0 +1,9 @@
+name        = "dev/gitignore-turbogears2"
+description = "Append gitignore rules for TurboGears2"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/TurboGears2.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

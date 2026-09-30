@@ -1,0 +1,9 @@
+name        = "dev/gitignore-scons"
+description = "Append gitignore rules for SCons"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SCons.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

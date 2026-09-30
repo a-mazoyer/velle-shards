@@ -1,0 +1,9 @@
+name        = "dev/gitignore-sass"
+description = "Append gitignore rules for Sass"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Sass.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

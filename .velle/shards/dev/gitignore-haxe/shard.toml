@@ -1,0 +1,9 @@
+name        = "dev/gitignore-haxe"
+description = "Append gitignore rules for Haxe"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Haxe.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

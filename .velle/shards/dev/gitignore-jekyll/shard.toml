@@ -1,0 +1,9 @@
+name        = "dev/gitignore-jekyll"
+description = "Append gitignore rules for Jekyll"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Jekyll.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

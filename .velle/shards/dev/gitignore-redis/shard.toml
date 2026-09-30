@@ -1,0 +1,9 @@
+name        = "dev/gitignore-redis"
+description = "Append gitignore rules for Redis"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Redis.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

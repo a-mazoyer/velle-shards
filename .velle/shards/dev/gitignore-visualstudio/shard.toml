@@ -1,0 +1,9 @@
+name        = "dev/gitignore-visualstudio"
+description = "Append gitignore rules for VisualStudio"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/VisualStudio.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

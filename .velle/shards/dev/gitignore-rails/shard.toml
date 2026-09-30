@@ -1,0 +1,9 @@
+name        = "dev/gitignore-rails"
+description = "Append gitignore rules for Rails"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Rails.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

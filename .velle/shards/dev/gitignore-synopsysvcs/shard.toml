@@ -1,0 +1,9 @@
+name        = "dev/gitignore-synopsysvcs"
+description = "Append gitignore rules for SynopsysVCS"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SynopsysVCS.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-syncthing"
+description = "Append gitignore rules for Syncthing"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Syncthing.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

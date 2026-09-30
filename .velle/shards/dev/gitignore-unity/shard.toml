@@ -1,0 +1,9 @@
+name        = "dev/gitignore-unity"
+description = "Append gitignore rules for Unity"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Unity.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-fancy"
+description = "Append gitignore rules for Fancy"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Fancy.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-opa"
+description = "Append gitignore rules for Opa"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Opa.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

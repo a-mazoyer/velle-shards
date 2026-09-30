@@ -1,0 +1,9 @@
+name        = "dev/gitignore-bazaar"
+description = "Append gitignore rules for Bazaar"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Bazaar.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-cloud9"
+description = "Append gitignore rules for Cloud9"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Cloud9.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

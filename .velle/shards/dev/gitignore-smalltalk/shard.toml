@@ -1,0 +1,9 @@
+name        = "dev/gitignore-smalltalk"
+description = "Append gitignore rules for Smalltalk"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Smalltalk.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

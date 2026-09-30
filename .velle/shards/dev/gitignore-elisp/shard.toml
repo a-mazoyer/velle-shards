@@ -1,0 +1,9 @@
+name        = "dev/gitignore-elisp"
+description = "Append gitignore rules for Elisp"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Elisp.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-dart"
+description = "Append gitignore rules for Dart"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Dart.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

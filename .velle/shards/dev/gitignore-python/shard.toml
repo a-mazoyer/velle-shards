@@ -1,0 +1,9 @@
+name        = "dev/gitignore-python"
+description = "Append gitignore rules for Python"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Python.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

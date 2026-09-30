@@ -1,0 +1,9 @@
+name        = "dev/gitignore-xcode"
+description = "Append gitignore rules for Xcode"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Xcode.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

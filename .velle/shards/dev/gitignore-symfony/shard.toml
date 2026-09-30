@@ -1,0 +1,9 @@
+name        = "dev/gitignore-symfony"
+description = "Append gitignore rules for Symfony"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Symfony.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

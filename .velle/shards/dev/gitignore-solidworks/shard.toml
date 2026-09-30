@@ -1,0 +1,9 @@
+name        = "dev/gitignore-solidworks"
+description = "Append gitignore rules for SolidWorks"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SolidWorks.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

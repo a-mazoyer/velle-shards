@@ -1,0 +1,9 @@
+name        = "dev/gitignore-githubpages"
+description = "Append gitignore rules for GitHubPages"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/GitHubPages.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

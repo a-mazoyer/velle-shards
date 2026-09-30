@@ -1,0 +1,9 @@
+name        = "dev/gitignore-bricxcc"
+description = "Append gitignore rules for BricxCC"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/BricxCC.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

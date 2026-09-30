@@ -1,0 +1,9 @@
+name        = "dev/gitignore-diff"
+description = "Append gitignore rules for Diff"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Diff.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

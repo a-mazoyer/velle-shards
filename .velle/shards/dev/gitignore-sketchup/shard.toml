@@ -1,0 +1,9 @@
+name        = "dev/gitignore-sketchup"
+description = "Append gitignore rules for SketchUp"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SketchUp.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

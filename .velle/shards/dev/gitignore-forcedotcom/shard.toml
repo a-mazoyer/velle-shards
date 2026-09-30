@@ -1,0 +1,9 @@
+name        = "dev/gitignore-forcedotcom"
+description = "Append gitignore rules for ForceDotCom"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ForceDotCom.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

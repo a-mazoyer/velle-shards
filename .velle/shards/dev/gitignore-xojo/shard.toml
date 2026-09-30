@@ -1,0 +1,9 @@
+name        = "dev/gitignore-xojo"
+description = "Append gitignore rules for Xojo"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Xojo.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

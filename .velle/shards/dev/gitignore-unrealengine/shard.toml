@@ -1,0 +1,9 @@
+name        = "dev/gitignore-unrealengine"
+description = "Append gitignore rules for UnrealEngine"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/UnrealEngine.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

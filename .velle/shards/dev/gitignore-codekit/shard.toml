@@ -1,0 +1,9 @@
+name        = "dev/gitignore-codekit"
+description = "Append gitignore rules for CodeKit"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CodeKit.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

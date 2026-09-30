@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lyx"
+description = "Append gitignore rules for LyX"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/LyX.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

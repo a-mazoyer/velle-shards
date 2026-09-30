@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lazarus"
+description = "Append gitignore rules for Lazarus"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Lazarus.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

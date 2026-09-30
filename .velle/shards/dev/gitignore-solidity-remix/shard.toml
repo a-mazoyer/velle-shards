@@ -1,0 +1,9 @@
+name        = "dev/gitignore-solidity-remix"
+description = "Append gitignore rules for Solidity-Remix"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Solidity-Remix.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

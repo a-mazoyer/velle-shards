@@ -1,0 +1,9 @@
+name        = "dev/gitignore-opencart"
+description = "Append gitignore rules for OpenCart"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/OpenCart.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

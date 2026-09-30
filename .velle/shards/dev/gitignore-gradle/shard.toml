@@ -1,0 +1,9 @@
+name        = "dev/gitignore-gradle"
+description = "Append gitignore rules for Gradle"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Gradle.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

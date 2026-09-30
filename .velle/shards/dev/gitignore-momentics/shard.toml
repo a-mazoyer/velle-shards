@@ -1,0 +1,9 @@
+name        = "dev/gitignore-momentics"
+description = "Append gitignore rules for Momentics"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Momentics.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

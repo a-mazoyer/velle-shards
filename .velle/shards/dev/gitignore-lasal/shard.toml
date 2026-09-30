@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lasal"
+description = "Append gitignore rules for Lasal"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Lasal.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

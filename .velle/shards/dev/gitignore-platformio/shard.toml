@@ -1,0 +1,9 @@
+name        = "dev/gitignore-platformio"
+description = "Append gitignore rules for PlatformIO"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/PlatformIO.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

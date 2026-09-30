@@ -1,0 +1,9 @@
+name        = "dev/gitignore-laravel"
+description = "Append gitignore rules for Laravel"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Laravel.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

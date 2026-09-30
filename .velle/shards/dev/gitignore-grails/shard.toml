@@ -1,0 +1,9 @@
+name        = "dev/gitignore-grails"
+description = "Append gitignore rules for Grails"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Grails.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

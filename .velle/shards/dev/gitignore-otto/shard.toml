@@ -1,0 +1,9 @@
+name        = "dev/gitignore-otto"
+description = "Append gitignore rules for Otto"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Otto.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

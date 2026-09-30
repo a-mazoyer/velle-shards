@@ -1,0 +1,9 @@
+name        = "dev/gitignore-kate"
+description = "Append gitignore rules for Kate"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Kate.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

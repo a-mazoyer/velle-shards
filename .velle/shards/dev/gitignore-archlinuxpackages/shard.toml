@@ -1,0 +1,9 @@
+name        = "dev/gitignore-archlinuxpackages"
+description = "Append gitignore rules for ArchLinuxPackages"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ArchLinuxPackages.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

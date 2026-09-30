@@ -1,0 +1,9 @@
+name        = "dev/gitignore-eiffelstudio"
+description = "Append gitignore rules for EiffelStudio"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/EiffelStudio.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

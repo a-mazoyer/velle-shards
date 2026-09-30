@@ -1,0 +1,9 @@
+name        = "dev/gitignore-android"
+description = "Append gitignore rules for Android"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Android.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

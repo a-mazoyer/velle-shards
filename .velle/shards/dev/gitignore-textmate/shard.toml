@@ -1,0 +1,9 @@
+name        = "dev/gitignore-textmate"
+description = "Append gitignore rules for TextMate"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/TextMate.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

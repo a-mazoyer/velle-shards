@@ -1,0 +1,9 @@
+name        = "dev/gitignore-symphonycms"
+description = "Append gitignore rules for SymphonyCMS"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SymphonyCMS.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

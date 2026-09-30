@@ -1,0 +1,9 @@
+name        = "dev/gitignore-playframework"
+description = "Append gitignore rules for PlayFramework"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/PlayFramework.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

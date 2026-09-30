@@ -1,0 +1,9 @@
+name        = "dev/gitignore-ninja"
+description = "Append gitignore rules for Ninja"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Ninja.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

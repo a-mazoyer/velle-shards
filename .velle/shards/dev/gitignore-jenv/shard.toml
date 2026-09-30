@@ -1,0 +1,9 @@
+name        = "dev/gitignore-jenv"
+description = "Append gitignore rules for JEnv"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/JEnv.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

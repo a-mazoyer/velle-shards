@@ -1,0 +1,9 @@
+name        = "dev/gitignore-node"
+description = "Append gitignore rules for Node"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Node.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

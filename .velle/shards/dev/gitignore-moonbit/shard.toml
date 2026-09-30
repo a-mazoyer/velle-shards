@@ -1,0 +1,9 @@
+name        = "dev/gitignore-moonbit"
+description = "Append gitignore rules for MoonBit"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/MoonBit.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-processing"
+description = "Append gitignore rules for Processing"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Processing.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

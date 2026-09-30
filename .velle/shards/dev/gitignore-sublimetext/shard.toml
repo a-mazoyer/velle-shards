@@ -1,0 +1,9 @@
+name        = "dev/gitignore-sublimetext"
+description = "Append gitignore rules for SublimeText"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SublimeText.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

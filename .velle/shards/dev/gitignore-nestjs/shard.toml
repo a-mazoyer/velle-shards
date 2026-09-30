@@ -1,0 +1,9 @@
+name        = "dev/gitignore-nestjs"
+description = "Append gitignore rules for Nestjs"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Nestjs.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

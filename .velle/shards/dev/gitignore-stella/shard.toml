@@ -1,0 +1,9 @@
+name        = "dev/gitignore-stella"
+description = "Append gitignore rules for Stella"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Stella.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

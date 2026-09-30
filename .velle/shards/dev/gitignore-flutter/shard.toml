@@ -1,0 +1,9 @@
+name        = "dev/gitignore-flutter"
+description = "Append gitignore rules for Flutter"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Flutter.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

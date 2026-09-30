@@ -1,0 +1,9 @@
+name        = "dev/gitignore-mise"
+description = "Append gitignore rules for mise"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/mise.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-mercurial"
+description = "Append gitignore rules for Mercurial"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Mercurial.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

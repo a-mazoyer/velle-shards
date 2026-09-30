@@ -1,0 +1,9 @@
+name        = "dev/gitignore-ros"
+description = "Append gitignore rules for ROS"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ROS.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

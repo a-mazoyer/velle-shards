@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lemonstand"
+description = "Append gitignore rules for LemonStand"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/LemonStand.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

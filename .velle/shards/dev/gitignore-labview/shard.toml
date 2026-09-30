@@ -1,0 +1,9 @@
+name        = "dev/gitignore-labview"
+description = "Append gitignore rules for LabVIEW"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/LabVIEW.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

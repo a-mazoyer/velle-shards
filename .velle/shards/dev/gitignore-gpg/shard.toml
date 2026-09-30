@@ -1,0 +1,9 @@
+name        = "dev/gitignore-gpg"
+description = "Append gitignore rules for GPG"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/GPG.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

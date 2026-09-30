@@ -1,0 +1,9 @@
+name        = "dev/gitignore-gitbook"
+description = "Append gitignore rules for GitBook"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/GitBook.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

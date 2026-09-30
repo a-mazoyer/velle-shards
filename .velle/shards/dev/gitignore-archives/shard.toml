@@ -1,0 +1,9 @@
+name        = "dev/gitignore-archives"
+description = "Append gitignore rules for Archives"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Archives.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

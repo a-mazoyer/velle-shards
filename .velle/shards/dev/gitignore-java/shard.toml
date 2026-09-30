@@ -1,0 +1,9 @@
+name        = "dev/gitignore-java"
+description = "Append gitignore rules for Java"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Java.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

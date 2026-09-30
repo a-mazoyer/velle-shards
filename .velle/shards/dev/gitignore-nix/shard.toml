@@ -1,0 +1,9 @@
+name        = "dev/gitignore-nix"
+description = "Append gitignore rules for Nix"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Nix.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

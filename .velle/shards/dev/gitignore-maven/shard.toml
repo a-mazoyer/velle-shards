@@ -1,0 +1,9 @@
+name        = "dev/gitignore-maven"
+description = "Append gitignore rules for Maven"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Maven.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

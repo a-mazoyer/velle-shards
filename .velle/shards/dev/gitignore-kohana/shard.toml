@@ -1,0 +1,9 @@
+name        = "dev/gitignore-kohana"
+description = "Append gitignore rules for Kohana"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Kohana.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

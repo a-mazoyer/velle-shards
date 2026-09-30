@@ -1,0 +1,9 @@
+name        = "dev/gitignore-r"
+description = "Append gitignore rules for R"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/R.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

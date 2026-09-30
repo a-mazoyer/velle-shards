@@ -1,0 +1,9 @@
+name        = "dev/gitignore-igorpro"
+description = "Append gitignore rules for IGORPro"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/IGORPro.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

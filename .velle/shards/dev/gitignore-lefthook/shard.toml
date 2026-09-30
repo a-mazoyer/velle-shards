@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lefthook"
+description = "Append gitignore rules for Lefthook"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Lefthook.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

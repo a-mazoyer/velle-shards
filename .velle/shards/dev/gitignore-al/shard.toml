@@ -1,0 +1,9 @@
+name        = "dev/gitignore-al"
+description = "Append gitignore rules for AL"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/AL.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

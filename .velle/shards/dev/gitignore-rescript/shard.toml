@@ -1,0 +1,9 @@
+name        = "dev/gitignore-rescript"
+description = "Append gitignore rules for ReScript"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ReScript.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-appceleratortitanium"
+description = "Append gitignore rules for AppceleratorTitanium"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/AppceleratorTitanium.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

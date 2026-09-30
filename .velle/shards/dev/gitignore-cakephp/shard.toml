@@ -1,0 +1,9 @@
+name        = "dev/gitignore-cakephp"
+description = "Append gitignore rules for CakePHP"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CakePHP.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

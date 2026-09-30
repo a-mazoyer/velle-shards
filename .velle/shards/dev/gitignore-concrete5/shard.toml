@@ -1,0 +1,9 @@
+name        = "dev/gitignore-concrete5"
+description = "Append gitignore rules for Concrete5"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Concrete5.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

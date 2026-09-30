@@ -1,0 +1,9 @@
+name        = "dev/gitignore-craftcms"
+description = "Append gitignore rules for CraftCMS"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CraftCMS.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

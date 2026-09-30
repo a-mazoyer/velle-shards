@@ -1,0 +1,9 @@
+name        = "dev/gitignore-gwt"
+description = "Append gitignore rules for GWT"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/GWT.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

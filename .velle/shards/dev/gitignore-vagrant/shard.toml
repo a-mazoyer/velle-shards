@@ -1,0 +1,9 @@
+name        = "dev/gitignore-vagrant"
+description = "Append gitignore rules for Vagrant"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Vagrant.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

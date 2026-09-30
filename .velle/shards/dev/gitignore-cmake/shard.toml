@@ -1,0 +1,9 @@
+name        = "dev/gitignore-cmake"
+description = "Append gitignore rules for CMake"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CMake.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

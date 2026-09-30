@@ -1,0 +1,9 @@
+name        = "dev/gitignore-iar"
+description = "Append gitignore rules for IAR"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/IAR.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-coq"
+description = "Append gitignore rules for Coq"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Coq.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

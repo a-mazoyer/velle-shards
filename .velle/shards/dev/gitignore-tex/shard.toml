@@ -1,0 +1,9 @@
+name        = "dev/gitignore-tex"
+description = "Append gitignore rules for TeX"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/TeX.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

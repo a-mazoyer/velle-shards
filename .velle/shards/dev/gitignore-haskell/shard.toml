@@ -1,0 +1,9 @@
+name        = "dev/gitignore-haskell"
+description = "Append gitignore rules for Haskell"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Haskell.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

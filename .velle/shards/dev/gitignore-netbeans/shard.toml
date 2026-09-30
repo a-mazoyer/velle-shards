@@ -1,0 +1,9 @@
+name        = "dev/gitignore-netbeans"
+description = "Append gitignore rules for NetBeans"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/NetBeans.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

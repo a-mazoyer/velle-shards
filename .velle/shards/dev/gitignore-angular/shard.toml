@@ -1,0 +1,9 @@
+name        = "dev/gitignore-angular"
+description = "Append gitignore rules for Angular"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Angular.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

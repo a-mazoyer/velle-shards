@@ -1,0 +1,9 @@
+name        = "dev/gitignore-kdevelop4"
+description = "Append gitignore rules for KDevelop4"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/KDevelop4.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

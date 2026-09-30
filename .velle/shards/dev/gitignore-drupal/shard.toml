@@ -1,0 +1,9 @@
+name        = "dev/gitignore-drupal"
+description = "Append gitignore rules for Drupal"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Drupal.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-zephir"
+description = "Append gitignore rules for Zephir"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Zephir.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

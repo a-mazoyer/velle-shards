@@ -1,0 +1,9 @@
+name        = "dev/gitignore-objective-c"
+description = "Append gitignore rules for Objective-C"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Objective-C.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

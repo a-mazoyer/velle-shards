@@ -1,0 +1,9 @@
+name        = "dev/gitignore-notepadpp"
+description = "Append gitignore rules for NotepadPP"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/NotepadPP.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

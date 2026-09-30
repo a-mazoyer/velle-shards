@@ -1,0 +1,9 @@
+name        = "dev/gitignore-stm32cubeide"
+description = "Append gitignore rules for STM32CubeIDE"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/STM32CubeIDE.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-composer"
+description = "Append gitignore rules for Composer"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Composer.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

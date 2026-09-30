@@ -1,0 +1,9 @@
+name        = "dev/gitignore-purescript"
+description = "Append gitignore rules for PureScript"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/PureScript.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

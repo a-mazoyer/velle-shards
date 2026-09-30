@@ -1,0 +1,9 @@
+name        = "dev/gitignore-delphi"
+description = "Append gitignore rules for Delphi"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Delphi.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

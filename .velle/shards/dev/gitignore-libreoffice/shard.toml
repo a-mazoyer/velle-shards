@@ -1,0 +1,9 @@
+name        = "dev/gitignore-libreoffice"
+description = "Append gitignore rules for LibreOffice"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/LibreOffice.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

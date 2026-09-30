@@ -1,0 +1,9 @@
+name        = "dev/gitignore-backup"
+description = "Append gitignore rules for Backup"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Backup.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

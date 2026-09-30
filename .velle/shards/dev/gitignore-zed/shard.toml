@@ -1,0 +1,9 @@
+name        = "dev/gitignore-zed"
+description = "Append gitignore rules for Zed"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Zed.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

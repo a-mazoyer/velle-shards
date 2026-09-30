@@ -1,0 +1,9 @@
+name        = "dev/gitignore-leiningen"
+description = "Append gitignore rules for Leiningen"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Leiningen.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

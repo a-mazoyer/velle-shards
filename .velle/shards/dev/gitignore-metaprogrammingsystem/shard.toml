@@ -1,0 +1,9 @@
+name        = "dev/gitignore-metaprogrammingsystem"
+description = "Append gitignore rules for MetaProgrammingSystem"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/MetaProgrammingSystem.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

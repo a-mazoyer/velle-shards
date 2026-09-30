@@ -1,0 +1,9 @@
+name        = "dev/gitignore-patch"
+description = "Append gitignore rules for Patch"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Patch.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

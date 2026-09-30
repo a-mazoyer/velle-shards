@@ -1,0 +1,9 @@
+name        = "dev/gitignore-flexbuilder"
+description = "Append gitignore rules for FlexBuilder"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/FlexBuilder.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

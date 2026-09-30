@@ -1,0 +1,9 @@
+name        = "dev/gitignore-tags"
+description = "Append gitignore rules for Tags"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Tags.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

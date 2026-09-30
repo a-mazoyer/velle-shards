@@ -1,0 +1,9 @@
+name        = "dev/gitignore-extjs"
+description = "Append gitignore rules for ExtJs"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ExtJs.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

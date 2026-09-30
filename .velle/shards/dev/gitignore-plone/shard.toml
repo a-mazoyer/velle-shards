@@ -1,0 +1,9 @@
+name        = "dev/gitignore-plone"
+description = "Append gitignore rules for Plone"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Plone.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

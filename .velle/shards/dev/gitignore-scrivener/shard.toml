@@ -1,0 +1,9 @@
+name        = "dev/gitignore-scrivener"
+description = "Append gitignore rules for Scrivener"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Scrivener.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

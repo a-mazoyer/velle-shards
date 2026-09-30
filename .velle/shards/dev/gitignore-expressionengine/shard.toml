@@ -1,0 +1,9 @@
+name        = "dev/gitignore-expressionengine"
+description = "Append gitignore rules for ExpressionEngine"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ExpressionEngine.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

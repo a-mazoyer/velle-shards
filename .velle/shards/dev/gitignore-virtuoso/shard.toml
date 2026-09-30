@@ -1,0 +1,9 @@
+name        = "dev/gitignore-virtuoso"
+description = "Append gitignore rules for Virtuoso"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Virtuoso.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

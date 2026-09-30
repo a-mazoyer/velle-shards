@@ -1,0 +1,9 @@
+name        = "dev/gitignore-c"
+description = "Append gitignore rules for C"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/C.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

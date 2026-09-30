@@ -1,0 +1,9 @@
+name        = "dev/gitignore-psoccreator"
+description = "Append gitignore rules for PSoCCreator"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/PSoCCreator.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

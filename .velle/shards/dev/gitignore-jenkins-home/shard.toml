@@ -1,0 +1,9 @@
+name        = "dev/gitignore-jenkins-home"
+description = "Append gitignore rules for JENKINS_HOME"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/JENKINS_HOME.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

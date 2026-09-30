@@ -1,0 +1,9 @@
+name        = "dev/gitignore-dropbox"
+description = "Append gitignore rules for Dropbox"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Dropbox.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-zendframework"
+description = "Append gitignore rules for ZendFramework"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ZendFramework.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

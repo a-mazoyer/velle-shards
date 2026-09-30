@@ -1,0 +1,9 @@
+name        = "dev/gitignore-katalon"
+description = "Append gitignore rules for Katalon"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Katalon.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

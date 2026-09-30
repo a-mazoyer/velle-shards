@@ -1,0 +1,9 @@
+name        = "dev/gitignore-rust"
+description = "Append gitignore rules for Rust"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Rust.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

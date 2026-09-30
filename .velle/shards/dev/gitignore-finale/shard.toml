@@ -1,0 +1,9 @@
+name        = "dev/gitignore-finale"
+description = "Append gitignore rules for Finale"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Finale.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

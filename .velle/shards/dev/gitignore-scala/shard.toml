@@ -1,0 +1,9 @@
+name        = "dev/gitignore-scala"
+description = "Append gitignore rules for Scala"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Scala.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

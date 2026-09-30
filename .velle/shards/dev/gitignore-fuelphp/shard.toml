@@ -1,0 +1,9 @@
+name        = "dev/gitignore-fuelphp"
+description = "Append gitignore rules for FuelPHP"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/FuelPHP.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

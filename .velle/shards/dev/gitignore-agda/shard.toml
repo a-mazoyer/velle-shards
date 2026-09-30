@@ -1,0 +1,9 @@
+name        = "dev/gitignore-agda"
+description = "Append gitignore rules for Agda"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Agda.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

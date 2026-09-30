@@ -1,0 +1,9 @@
+name        = "dev/gitignore-godot"
+description = "Append gitignore rules for Godot"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Godot.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

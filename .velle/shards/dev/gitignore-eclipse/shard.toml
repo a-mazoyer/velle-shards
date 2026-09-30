@@ -1,0 +1,9 @@
+name        = "dev/gitignore-eclipse"
+description = "Append gitignore rules for Eclipse"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Eclipse.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

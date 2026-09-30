@@ -1,0 +1,9 @@
+name        = "dev/gitignore-testcomplete"
+description = "Append gitignore rules for TestComplete"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/TestComplete.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

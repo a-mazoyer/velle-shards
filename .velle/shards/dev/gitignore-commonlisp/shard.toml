@@ -1,0 +1,9 @@
+name        = "dev/gitignore-commonlisp"
+description = "Append gitignore rules for CommonLisp"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CommonLisp.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

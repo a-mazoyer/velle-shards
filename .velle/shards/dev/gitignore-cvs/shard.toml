@@ -1,0 +1,9 @@
+name        = "dev/gitignore-cvs"
+description = "Append gitignore rules for CVS"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CVS.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

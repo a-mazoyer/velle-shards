@@ -1,0 +1,9 @@
+name        = "dev/gitignore-cfwheels"
+description = "Append gitignore rules for CFWheels"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CFWheels.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

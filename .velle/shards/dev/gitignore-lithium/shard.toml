@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lithium"
+description = "Append gitignore rules for Lithium"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Lithium.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

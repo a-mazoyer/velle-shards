@@ -1,0 +1,9 @@
+name        = "dev/gitignore-flaxengine"
+description = "Append gitignore rules for FlaxEngine"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/FlaxEngine.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

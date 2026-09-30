@@ -1,0 +1,9 @@
+name        = "dev/gitignore-dm"
+description = "Append gitignore rules for DM"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/DM.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

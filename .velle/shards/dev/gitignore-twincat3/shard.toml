@@ -1,0 +1,9 @@
+name        = "dev/gitignore-twincat3"
+description = "Append gitignore rules for TwinCAT3"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/TwinCAT3.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

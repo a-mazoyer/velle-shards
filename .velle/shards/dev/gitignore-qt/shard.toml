@@ -1,0 +1,9 @@
+name        = "dev/gitignore-qt"
+description = "Append gitignore rules for Qt"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Qt.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

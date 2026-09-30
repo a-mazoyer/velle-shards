@@ -1,0 +1,9 @@
+name        = "dev/gitignore-appengine"
+description = "Append gitignore rules for AppEngine"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/AppEngine.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

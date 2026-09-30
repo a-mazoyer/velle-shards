@@ -1,0 +1,9 @@
+name        = "dev/gitignore-episerver"
+description = "Append gitignore rules for EPiServer"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/EPiServer.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

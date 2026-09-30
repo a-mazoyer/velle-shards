@@ -1,0 +1,9 @@
+name        = "dev/gitignore-ssdt-sqlproj"
+description = "Append gitignore rules for SSDT-sqlproj"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SSDT-sqlproj.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-gleam"
+description = "Append gitignore rules for Gleam"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Gleam.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

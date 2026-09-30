@@ -1,0 +1,9 @@
+name        = "dev/gitignore-sdcc"
+description = "Append gitignore rules for Sdcc"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Sdcc.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-swift"
+description = "Append gitignore rules for Swift"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Swift.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

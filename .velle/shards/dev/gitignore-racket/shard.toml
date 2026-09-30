@@ -1,0 +1,9 @@
+name        = "dev/gitignore-racket"
+description = "Append gitignore rules for Racket"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Racket.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

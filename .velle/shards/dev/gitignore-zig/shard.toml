@@ -1,0 +1,9 @@
+name        = "dev/gitignore-zig"
+description = "Append gitignore rules for Zig"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Zig.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

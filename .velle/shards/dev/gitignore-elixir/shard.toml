@@ -1,0 +1,9 @@
+name        = "dev/gitignore-elixir"
+description = "Append gitignore rules for Elixir"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Elixir.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

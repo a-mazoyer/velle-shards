@@ -1,0 +1,9 @@
+name        = "dev/gitignore-matlab"
+description = "Append gitignore rules for MATLAB"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/MATLAB.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

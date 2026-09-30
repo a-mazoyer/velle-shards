@@ -1,0 +1,9 @@
+name        = "dev/gitignore-kotlin"
+description = "Append gitignore rules for Kotlin"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Kotlin.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

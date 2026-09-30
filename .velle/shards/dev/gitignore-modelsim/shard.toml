@@ -1,0 +1,9 @@
+name        = "dev/gitignore-modelsim"
+description = "Append gitignore rules for ModelSim"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ModelSim.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

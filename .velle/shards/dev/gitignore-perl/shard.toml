@@ -1,0 +1,9 @@
+name        = "dev/gitignore-perl"
+description = "Append gitignore rules for Perl"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Perl.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

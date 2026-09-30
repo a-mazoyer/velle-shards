@@ -1,0 +1,9 @@
+name        = "dev/gitignore-xilinxise"
+description = "Append gitignore rules for XilinxISE"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/XilinxISE.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

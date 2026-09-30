@@ -1,0 +1,9 @@
+name        = "dev/gitignore-go"
+description = "Append gitignore rules for Go"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Go.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

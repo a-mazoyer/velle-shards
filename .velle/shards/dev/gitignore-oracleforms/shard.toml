@@ -1,0 +1,9 @@
+name        = "dev/gitignore-oracleforms"
+description = "Append gitignore rules for OracleForms"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/OracleForms.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

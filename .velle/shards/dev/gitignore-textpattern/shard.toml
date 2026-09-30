@@ -1,0 +1,9 @@
+name        = "dev/gitignore-textpattern"
+description = "Append gitignore rules for Textpattern"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Textpattern.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

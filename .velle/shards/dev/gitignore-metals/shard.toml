@@ -1,0 +1,9 @@
+name        = "dev/gitignore-metals"
+description = "Append gitignore rules for Metals"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Metals.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

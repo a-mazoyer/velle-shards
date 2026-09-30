@@ -1,0 +1,9 @@
+name        = "dev/gitignore-chefcookbook"
+description = "Append gitignore rules for ChefCookbook"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/ChefCookbook.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

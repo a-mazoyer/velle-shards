@@ -1,0 +1,9 @@
+name        = "dev/gitignore-nanoc"
+description = "Append gitignore rules for Nanoc"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Nanoc.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

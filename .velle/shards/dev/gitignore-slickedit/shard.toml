@@ -1,0 +1,9 @@
+name        = "dev/gitignore-slickedit"
+description = "Append gitignore rules for SlickEdit"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SlickEdit.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

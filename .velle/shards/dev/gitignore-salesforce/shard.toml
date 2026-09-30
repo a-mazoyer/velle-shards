@@ -1,0 +1,9 @@
+name        = "dev/gitignore-salesforce"
+description = "Append gitignore rules for Salesforce"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Salesforce.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

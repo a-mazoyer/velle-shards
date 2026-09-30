@@ -1,0 +1,9 @@
+name        = "dev/gitignore-lean"
+description = "Append gitignore rules for Lean"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Lean.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

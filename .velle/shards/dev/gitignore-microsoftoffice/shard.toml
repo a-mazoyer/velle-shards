@@ -1,0 +1,9 @@
+name        = "dev/gitignore-microsoftoffice"
+description = "Append gitignore rules for MicrosoftOffice"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/MicrosoftOffice.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

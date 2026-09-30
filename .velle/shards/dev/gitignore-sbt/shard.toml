@@ -1,0 +1,9 @@
+name        = "dev/gitignore-sbt"
+description = "Append gitignore rules for SBT"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SBT.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

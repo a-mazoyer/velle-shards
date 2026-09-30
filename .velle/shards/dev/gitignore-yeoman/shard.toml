@@ -1,0 +1,9 @@
+name        = "dev/gitignore-yeoman"
+description = "Append gitignore rules for Yeoman"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Yeoman.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

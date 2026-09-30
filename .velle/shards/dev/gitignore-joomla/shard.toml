@@ -1,0 +1,9 @@
+name        = "dev/gitignore-joomla"
+description = "Append gitignore rules for Joomla"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Joomla.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

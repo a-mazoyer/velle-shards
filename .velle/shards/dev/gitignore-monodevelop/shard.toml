@@ -1,0 +1,9 @@
+name        = "dev/gitignore-monodevelop"
+description = "Append gitignore rules for MonoDevelop"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/MonoDevelop.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

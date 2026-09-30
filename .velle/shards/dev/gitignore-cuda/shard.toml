@@ -1,0 +1,9 @@
+name        = "dev/gitignore-cuda"
+description = "Append gitignore rules for CUDA"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/CUDA.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-nextjs"
+description = "Append gitignore rules for Nextjs"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Nextjs.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

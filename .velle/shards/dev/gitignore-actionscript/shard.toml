@@ -1,0 +1,9 @@
+name        = "dev/gitignore-actionscript"
+description = "Append gitignore rules for Actionscript"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Actionscript.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

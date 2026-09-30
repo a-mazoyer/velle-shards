@@ -1,0 +1,9 @@
+name        = "dev/gitignore-magento"
+description = "Append gitignore rules for Magento"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Magento.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

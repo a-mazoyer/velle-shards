@@ -1,0 +1,9 @@
+name        = "dev/gitignore-espresso"
+description = "Append gitignore rules for Espresso"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Espresso.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

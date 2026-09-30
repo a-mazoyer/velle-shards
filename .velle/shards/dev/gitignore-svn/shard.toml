@@ -1,0 +1,9 @@
+name        = "dev/gitignore-svn"
+description = "Append gitignore rules for SVN"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SVN.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

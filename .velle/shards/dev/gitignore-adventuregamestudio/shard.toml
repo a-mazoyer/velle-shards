@@ -1,0 +1,9 @@
+name        = "dev/gitignore-adventuregamestudio"
+description = "Append gitignore rules for AdventureGameStudio"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/AdventureGameStudio.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

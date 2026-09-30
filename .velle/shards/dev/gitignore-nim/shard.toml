@@ -1,0 +1,9 @@
+name        = "dev/gitignore-nim"
+description = "Append gitignore rules for Nim"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Nim.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

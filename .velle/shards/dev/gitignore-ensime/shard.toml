@@ -1,0 +1,9 @@
+name        = "dev/gitignore-ensime"
+description = "Append gitignore rules for Ensime"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Ensime.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

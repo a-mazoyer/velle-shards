@@ -1,0 +1,9 @@
+name        = "dev/gitignore-elm"
+description = "Append gitignore rules for Elm"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Elm.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-prestashop"
+description = "Append gitignore rules for Prestashop"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Prestashop.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

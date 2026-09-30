@@ -1,0 +1,9 @@
+name        = "dev/gitignore-images"
+description = "Append gitignore rules for Images"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Images.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

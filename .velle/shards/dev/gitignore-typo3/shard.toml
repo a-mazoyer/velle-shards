@@ -1,0 +1,9 @@
+name        = "dev/gitignore-typo3"
+description = "Append gitignore rules for Typo3"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Typo3.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

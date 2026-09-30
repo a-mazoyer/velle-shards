@@ -1,0 +1,9 @@
+name        = "dev/gitignore-windows"
+description = "Append gitignore rules for Windows"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Windows.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

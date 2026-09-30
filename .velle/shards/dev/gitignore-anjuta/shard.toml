@@ -1,0 +1,9 @@
+name        = "dev/gitignore-anjuta"
+description = "Append gitignore rules for Anjuta"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Anjuta.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

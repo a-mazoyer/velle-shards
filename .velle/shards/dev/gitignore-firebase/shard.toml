@@ -1,0 +1,9 @@
+name        = "dev/gitignore-firebase"
+description = "Append gitignore rules for Firebase"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Firebase.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

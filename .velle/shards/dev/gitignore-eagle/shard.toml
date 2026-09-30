@@ -1,0 +1,9 @@
+name        = "dev/gitignore-eagle"
+description = "Append gitignore rules for Eagle"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Eagle.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

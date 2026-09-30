@@ -1,0 +1,9 @@
+name        = "dev/gitignore-jboss"
+description = "Append gitignore rules for JBoss"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/JBoss.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-autotools"
+description = "Append gitignore rules for Autotools"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Autotools.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-macos"
+description = "Append gitignore rules for macOS"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/macOS.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

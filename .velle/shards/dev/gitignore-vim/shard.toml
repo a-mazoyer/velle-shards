@@ -1,0 +1,9 @@
+name        = "dev/gitignore-vim"
+description = "Append gitignore rules for Vim"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Vim.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

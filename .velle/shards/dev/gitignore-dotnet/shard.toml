@@ -1,0 +1,9 @@
+name        = "dev/gitignore-dotnet"
+description = "Append gitignore rules for Dotnet"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Dotnet.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

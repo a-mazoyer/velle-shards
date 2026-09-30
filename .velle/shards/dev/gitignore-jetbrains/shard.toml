@@ -1,0 +1,9 @@
+name        = "dev/gitignore-jetbrains"
+description = "Append gitignore rules for JetBrains"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/JetBrains.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

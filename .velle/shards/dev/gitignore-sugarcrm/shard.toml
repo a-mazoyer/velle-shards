@@ -1,0 +1,9 @@
+name        = "dev/gitignore-sugarcrm"
+description = "Append gitignore rules for SugarCRM"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SugarCRM.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

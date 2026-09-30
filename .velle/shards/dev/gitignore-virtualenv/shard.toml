@@ -1,0 +1,9 @@
+name        = "dev/gitignore-virtualenv"
+description = "Append gitignore rules for VirtualEnv"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/VirtualEnv.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

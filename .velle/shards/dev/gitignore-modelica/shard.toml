@@ -1,0 +1,9 @@
+name        = "dev/gitignore-modelica"
+description = "Append gitignore rules for Modelica"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Modelica.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

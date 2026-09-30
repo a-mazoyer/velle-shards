@@ -1,0 +1,9 @@
+name        = "dev/gitignore-waf"
+description = "Append gitignore rules for Waf"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/Waf.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "dev/gitignore-seamgen"
+description = "Append gitignore rules for SeamGen"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/SeamGen.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region

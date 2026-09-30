@@ -1,0 +1,9 @@
+name        = "dev/gitignore-wordpress"
+description = "Append gitignore rules for WordPress"
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/WordPress.gitignore"
+dest = ".gitignore"
+mode = "append"   # create | append | region
