@@ -1,9 +1,0 @@
-name        = "hello"
-description = ""
-params      = []
-requires    = []
-
-[[file]]
-src  = "files/hello.txt"
-dest = "hello.txt"
-mode = "create"   # create | append | region
