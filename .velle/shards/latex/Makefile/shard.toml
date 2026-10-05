@@ -1,0 +1,9 @@
+name        = "latex/Makefile"
+description = ""
+params      = ["project"]
+requires    = []
+
+[[file]]
+src  = "files/Makefile"
+dest = "Makefile"
+mode = "create"   # create | append | region
