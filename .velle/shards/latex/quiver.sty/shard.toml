@@ -1,0 +1,9 @@
+name        = "latex/quiver.sty"
+description = ""
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/quiver.sty"
+dest = "quiver.sty"
+mode = "create"   # create | append | region
