@@ -1,0 +1,60 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{okexplain}[2008/09/26 Ohad Kammar package: macros for explaining mathematical transitions]
+
+\RequirePackage{suffix}
+
+\newcommand\generic@explainabove[3]{%
+   \mathrel{%
+		\overset{%
+			\overset{\raisebox{0.5ex}{%
+       \makebox[0pt][c]{%
+				\begin{minipage}{\textwidth}%
+				 \center%
+				 \scriptsize%
+         {#2}%
+				\end{minipage}%
+       }}}%
+      {%
+			 \raisebox{1ex}{${#3}$}
+			 }}%
+     {#1}}}
+
+\newcommand\generic@explainbelow[3]{%
+	\mathrel{%
+		\underset{%
+			\underset{%
+				\makebox[0pt][c]{\scriptsize%
+					\raisebox{-1ex}{%
+						\begin{minipage}{\textwidth}%
+							\center%
+							{#2}%
+						\end{minipage}%
+ 				}}
+			}{%
+				\raisebox{-1ex}{${#3}$}%
+			}
+		}{%
+			#1%
+		}
+	}
+}
+
+\newcommand\explain[2]{\generic@explainabove{#1}{#2}{\downarrow}}
+\WithSuffix\newcommand\explain*[2]{\generic@explainbelow{#1}{#2}{\uparrow}}
+
+\newcommand\explainfar[2]{\generic@explainabove{#1}{#2}{\Big\downarrow}}
+\WithSuffix\newcommand\explainfar*[2]{\generic@explainbelow{#1}{#2}{\Big\uparrow}}
+\newcommand\NoArrowExplain[2]{%
+   \mathrel{%
+      \overset{\raisebox{0.5ex}{%
+       \makebox[0pt][c]{%
+        \begin{minipage}{\paperwidth}%
+         \center%
+         \scriptsize%
+         {#2}%
+        \end{minipage}%
+       }}}%
+     {#1}}}
+
+\WithSuffix\newcommand\explain+[2]{\mathbin{\smash{\explain{#1}{#2}}}}
+\WithSuffix\newcommand\explain-[2]{\mathbin{\smash{\explain*{#1}{#2}}}}

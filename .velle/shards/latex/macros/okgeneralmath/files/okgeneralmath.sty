@@ -1,0 +1,112 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{okgeneralmath}[2008/09/12 Ohad Kammar package: Miscellaneous math definitions]
+
+\RequirePackage{ifthen}
+\newboolean{okgeneralmath@noams}
+\setboolean{okgeneralmath@noams}{false}
+
+
+\DeclareOption{noams}{\setboolean{okgeneralmath@noams}{true}}
+\ProcessOptions
+
+\ifthenelse{\boolean{okgeneralmath@noams}}{}{%
+  \RequirePackage{amsmath}
+  \RequirePackage{amssymb}
+  \RequirePackage{amsfonts}
+  \RequirePackage{suffix}%
+}
+
+%\RequirePackage{oktheorem}
+\RequirePackage{okexplain}
+\RequirePackage{optparams}
+
+%import the := and \medcirc symbols from pxfonts .
+\DeclareSymbolFont{pxfontssymbolsC}{U}{pxsyc}{m}{n}
+\DeclareMathSymbol{\coloneqq}{\mathrel}{pxfontssymbolsC}{66}
+\DeclareMathSymbol{\eqqcolon}{\mathrel}{pxfontssymbolsC}{67}
+\DeclareMathSymbol{\medcirc}{\mathbin}{pxfontssymbolsC}{7}
+\newcommand\definedby{\coloneqq}
+\newcommand\defines{\eqqcolon}
+
+\newcommand\parent[1]{\left(#1\right)}
+\newcommand\braces[1]{\left\\{{#1}\right\}}
+\newcommand\bracks[1]{\left[#1\right]}
+\newcommand\anglebrackets[1]{\left<{#1}\right>}
+\newcommand\of{:}
+\newcommand\pair[2]{\left<{#1}, {#2}\right>}
+\WithSuffix\newcommand\pair-[2]{\langle#1,#2\rangle}
+\newcommand\triple[3]{\anglebrackets\{{#1}, {#2}, {#3}}}
+\newcommand\quadruple[4]{\anglebrackets\{{#1}, {#2}, {#3}, {#4}}}
+\newcommand\quintuple[5]{\anglebrackets\{{#1}, {#2}, {#3}, {#4}, {#5}}}
+\newcommand\join{\mathbin{\bowtie}}
+
+
+\newcommand\Union{\bigcup}
+\newcommand\set[1]{\left\{#1\right\}}
+\newcommand\suchthat{\middle\vert}
+\newcommand\ok@seq[3]{}%dummy def.
+\long\def\ok@seq[#1][#2]#3{\left\langle#3\right\rangle_{#1}^{#2}}
+\newcommand\seq{\optparams{\ok@seq}{[{}][{}]}}
+\newcommand\ok@coseq[3]{}%dummy def.
+\long\def\ok@coseq[#1][#2]#3{\left[#3\right]_{#1}^{#2}}
+\newcommand\coseq{\optparams{\ok@coseq}{[{}][{}]}}
+\newcommand\ok@seqnormal[3]{}%dummy def.
+\long\def\ok@seqnormal[#1][#2]#3{\langle#3\rangle_{#1}^{#2}}
+\WithSuffix\newcommand\seq*{\optparams{\ok@seqnormal}{[{}][{}]}}
+\WithSuffix\newcommand\pair*[2]{\seq*{#1,#2}}
+
+
+
+\newcommand\cross\times
+\newcommand\inv[1]\{{#1}^{-1}}
+\WithSuffix\newcommand\inv*[1]{\inv{\parent{#1}}}
+\WithSuffix\newcommand\inv-[1]{#1^{-1}}
+
+\newcommand\characteristic[1]\{{\rm\bf1}_{#1}}
+\newcommand\Image[1]\{{\rm Im}\parent{#1}}
+\newcommand\Domain[1]{\mathop{\rm Dom}\parent{#1}}
+\newcommand\Codomain[1]{\mathop{\rm Cod}\parent{#1}}
+
+\newcommand\isomorphic\cong
+\newcommand\nisomorphic\ncong
+
+\newcommand\reals{\mathbb{R}}
+\newcommand\complex{\mathbb{C}}
+\newcommand\naturals{\mathbb{N}}
+\newcommand\integers{\mathbb{Z}}
+\newcommand\rationals{\mathbb{Q}}
+
+%I like the varphi better.
+{\let\TEMP\varphi
+\global\let\varphi\phi
+\global\let\phi\TEMP
+
+\let\TEMP\varepsilon
+\global\let\varepsilon\epsilon
+\global\let\epsilon\TEMP
+}
+
+%OpenU notation.
+\let\subsetneq\subset
+\let\subset\subseteq
+\let\supsetneq\supset
+\let\supset\supseteq
+\newcommand\finsubset{\mathrel{\subset_{\rm f}}}
+\newcommand\finsubsetneq{\mathrel{\subsetneq_{\rm f}}}
+
+\newcommand\union\cup
+\newcommand\intersect\cap
+\newcommand\Intersect\bigcap
+
+\newcommand\cardinality[1]{\left\lvert{#1}\right\rvert}
+\newcommand\ceiling[1]{\left\lceil{#1}\right\rceil}
+
+\newcommand\placeholder{\mathord{-}}
+
+\newcommand\xto\xrightarrow
+\newcommand\xfrom\xleftarrow
+
+% Math hyphen
+\mathchardef\mhyphen="2D
+\providecommand\nsubset{}
+\renewcommand\nsubset{\nsubseteq}

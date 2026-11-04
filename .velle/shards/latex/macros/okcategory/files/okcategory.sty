@@ -1,0 +1,144 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{okcategory}[2008/09/12 Ohad Kammar package: math definitions for Category Theory]
+
+\RequirePackage{okgeneralmath}
+
+%basic categorical terminology.
+\newcommand\DomName\{{\rm Dom}}
+\newcommand\CodName\{{\rm Cod}}
+\newcommand\Dom[2][{}]{\mathord{\mathrel{\DomName}_{#1}\parent{#2}}}
+\newcommand\Cod[2][{}]{\mathord{\mathrel{\CodName}_{#1}\parent{#2}}}
+\newcommand\then{\mathbin ;}
+\newcommand\id[1][{}]\{{\rm id}_{#1}}
+\newcommand\Id[1][{}]\{{\rm Id}_{#1}}
+\newcommand\Obj[2][{}]{\mathop{\rm Ob}_{#1}#2}
+\newcommand\Hom[2][{}]{\mathord{\mathrel{\rm Hom}_{#1}\parent{#2}}}
+
+%Uniform notation for categories.
+%An arbitrary category.
+\newcommand\Cat[1]{\mathcal{#1}\/}
+%A named category (Set, CPO, etc.)
+\newcommand\Category[1]\{{\mathbf{ #1}}}
+
+%Common categories
+\newcommand\Set{\Category{Set}}
+\newcommand\Pos{\Category{Pos}}
+\newcommand\Grp{\Category{Grp}}
+\newcommand\Vect{\Category{Vect}}
+\newcommand\Topl{\Category{Top}}
+\newcommand\Categ{\Category{Cat}}
+\newcommand\Funct{\Category{Funct}}
+\newcommand\Endofunct{\Category{Endofunct}}
+\newcommand\Powerset[1]{\mathop{\mathcal{P}}\parent{#1}}
+\newcommand\FinPowerset[1]{\mathop{\mathcal{P}_{\rm fin}}\parent{#1}}
+\newcommand\NonemptyFinPowerset[1]{\mathop{\mathcal{P}^{\neq\emptyset}_{\rm fin}\parent{#1}}}
+\newcommand\wCPO{\omega\Category{CPO}}
+
+%Categorical constructions
+\newcommand\oppositeName\{{\rm op}}
+\newcommand\opposite[1]\{{#1}^\oppositeName}
+\newcommand\strict[1]\{{#1}^{\rm str}}
+
+%Functors
+\newcommand\diagonal\Delta
+\newcommand\diagonalmap\delta
+\newcommand\yoneda\{{\bf y}}
+
+%Tensor categories
+\newcommand\assoc[1][]{\mathbf{a}_{#1}}
+\newcommand\lunit[1][]{\mathbf{l}_{#1}}
+\newcommand\runit[1][]{\mathbf{r}_{#1}}
+\newcommand\PentagonAxiom{Pentagon Axiom}
+\newcommand\TriangleAxiom{Triangle Axiom}
+
+% Horizontal notations for natural transformations
+\newcommand\hof{\mathrel{\overset{\scriptscriptstyle\mathord{\circ}}{\scriptscriptstyle\mathord{\circ}}}}
+
+\newcommand\projection\pi
+\newcommand\prodmorphism\seq
+
+\newcommand\andthen{\mathrel{;}}
+\newcommand\compose\circ
+
+\newcommand\from{\leftarrow}
+\newcommand\embed{\hookrightarrow}
+\newcommand\monomo{\rightarrowtail}
+\newcommand\tensor{\otimes}
+\newcommand\epimor{\twoheadrightarrow}
+
+\newcommand\injection\iota
+\newcommand\coprodmorphism\coseq
+
+\newcommand\leftadjointto{\dashv}
+\newcommand\rightadjointto{\vdash}
+
+\newcommand\commacategory[2]\{{#1}\mathbin\downarrow{#2}}
+
+\newcommand\terminal{\mathbb{1}}
+\newcommand\initial{\mathbb{0}}
+
+\newcommand\Colim[1]{\mathop{\mathrm{Colim}}#1}
+\newcommand\Lim[1]{\mathop{\mathrm{Lim}}#1}
+
+% Nice syntax for adjunctions, taken from:
+% http://tex.stackexchange.com/questions/119170/an-environment-for-two-way-rules-in-category-theory
+%
+% Entering in math mode:
+%
+% \begin{adjunctions}[symbol=\implies]
+%  FA &  B \\
+%   A & GB
+% \end{adjunctions}
+%
+% will produce:
+%  FA ===> B
+%  ==========
+%   A ===> GB
+
+\RequirePackage{array,xparse,hhline}
+
+\ExplSyntaxOn
+\NewDocumentEnvironment{adjunctions}{O{}}
+ {
+  \cs_set_eq:cc {@arraycrsaved}{@arraycr}
+  \cs_set_eq:cN {@arraycr} \farin_arraycr:
+  \keys_set:nn { farin/adjunction } { #1 }
+  \begin{array}
+   {
+    @{ \hspace { \dim_eval:n { \l_farin_left_shift_dim + \l_farin_padding_dim } } }
+    r
+    @{ {\farin_strut:} \l_farin_symbol_tl {} }
+    l
+    @{ \hspace { \dim_eval:n { \l_farin_right_shift_dim + \l_farin_padding_dim } } }
+    l
+   }
+ }
+ {
+  \end{array}
+ }
+\keys_define:nn { farin/adjunction }
+ {
+  leftshift       .dim_set:N = \l_farin_left_shift_dim,
+  leftshift       .initial:n = 0pt,
+  rightshift      .dim_set:N = \l_farin_right_shift_dim,
+  rightshift      .initial:n = 0pt,
+  padding         .dim_set:N = \l_farin_padding_dim,
+  padding         .initial:n = 6pt,
+  symbol          .tl_set:N  = \l_farin_symbol_tl,
+  symbol          .initial:n = \longrightarrow,
+  verticalspacing .dim_set:N  = \l_farin_vertspac_dim,
+  verticalspacing .initial:n = {3pt},
+ }
+\cs_new_protected:Npn \farin_strut:
+ {
+  \vrule height \dim_eval:n { \ht\strutbox + 1.2\l_farin_vertspac_dim }
+         depth  \dim_eval:n { \dp\strutbox + \l_farin_vertspac_dim }
+         width 0pt
+ }
+\makeatletter
+\cs_new:Npn \farin_arraycr:
+   {
+  \@arraycrsaved\hhline{==}
+}
+\makeatother
+\ExplSyntaxOff

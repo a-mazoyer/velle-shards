@@ -1,0 +1,9 @@
+name        = "latex/macros/okgeneralmath"
+description = ""
+params      = []
+requires    = ["latex/macros/okexplain"]
+
+[[file]]
+src  = "files/okgeneralmath.sty"
+dest = "okgeneralmath.sty"
+mode = "create"   # create | append | region

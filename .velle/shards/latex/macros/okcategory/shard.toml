@@ -1,0 +1,9 @@
+name        = "latex/macros/okcategory"
+description = ""
+params      = []
+requires    = ["latex/macros/okgeneralmath"]
+
+[[file]]
+src  = "files/okcategory.sty"
+dest = "okcategory.sty"
+mode = "create"   # create | append | region

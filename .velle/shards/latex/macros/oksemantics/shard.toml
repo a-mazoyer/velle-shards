@@ -1,0 +1,9 @@
+name        = "latex/macros/oksemantics"
+description = ""
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/oksemantics.sty"
+dest = "oksemantics.sty"
+mode = "create"   # create | append | region

@@ -1,0 +1,9 @@
+name        = "latex/macros/okrewriting"
+description = ""
+params      = []
+requires    = ["latex/macros/okgeneralmath"]
+
+[[file]]
+src  = "files/okrewriting.sty"
+dest = "okrewriting.sty"
+mode = "create"   # create | append | region

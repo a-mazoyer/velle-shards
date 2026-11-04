@@ -1,0 +1,9 @@
+name        = "latex/macros/oktheorem"
+description = ""
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/oktheorem.sty"
+dest = "oktheorem.sty"
+mode = "create"   # create | append | region

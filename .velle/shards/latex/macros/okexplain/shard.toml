@@ -1,0 +1,9 @@
+name        = "latex/macros/okexplain"
+description = ""
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/okexplain.sty"
+dest = "okexplain.sty"
+mode = "create"   # create | append | region

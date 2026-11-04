@@ -1,0 +1,93 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{oktheorem}[2008/09/23 Ohad Kammar package: theorem-like environments for the seminar paper.]
+
+\RequirePackage{ifthen}
+\RequirePackage{amsthm}
+\RequirePackage{suffix}
+\RequirePackage{zref}
+
+\zref@newprop{oktheoremfreetext}{\oktheorem@parameter}
+
+\newcommand\OKTheoremAddReferences[2]{
+  \expandafter\newcommand\csname#1ref\endcsname[1]{#2~\ref{#1:##1}}
+  \expandafter\newcommand\csname#1label\endcsname[1]{\label{#1:##1}}
+  \WithSuffix\expandafter\newcommand\csname#1ref\endcsname*[1]{\ref{#1:##1}}
+  \WithSuffix\expandafter\newcommand\csname#1label\endcsname+[1]{\hypertarget{#1+:##1}{}\zref@labelbyprops{#1:##1}{oktheoremfreetext}}
+  \WithSuffix\expandafter\newcommand\csname#1ref\endcsname+[1]{\hyperlink{#1+:##1}\{{{\let\ref\@refstar#2~\zref@extract{#1:##1}{oktheoremfreetext}}}}}
+  \WithSuffix\expandafter\newcommand\csname#1ref\endcsname-[1]{\hyperlink{#1+:##1}\{{\let\ref\@refstar{\zref@extract{#1:##1}{oktheoremfreetext}}}}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{definitionEnv+}{Definition \oktheorem@parameter}
+\newenvironment{definition+}[1]{\def\oktheorem@parameter{#1}\begin{definitionEnv+}}{\end{definitionEnv+}}
+\OKTheoremAddReferences{definition}{Definition}
+
+
+\theoremstyle{definition}
+\newtheorem{exampleEnv}{Example}
+\newtheorem*{exampleEnv*}{Example}
+\newtheorem*{exampleEnv+}{Example \oktheorem@parameter}
+\newenvironment{example}{\begin{exampleEnv}\pushQED{\qed}}{\popQED\end{exampleEnv}}
+\newenvironment{example*}{\begin{exampleEnv*}\pushQED{\qed}}{\popQED\end{exampleEnv*}}
+\newenvironment{example+}[1]{\def\oktheorem@parameter{#1}\begin{exampleEnv+}}{\qed\end{exampleEnv+}}
+\OKTheoremAddReferences{example}{Example}
+
+\newtheorem{nonexampleEnv}[exampleEnv]{Non-example}
+\newtheorem*{nonexampleEnv*}{Non-example}
+\newtheorem*{nonexampleEnv+}{Non-example \oktheorem@parameter}
+\newenvironment{nonexample}{\begin{nonexampleEnv}\pushQED{\qed}}{\popQED\end{nonexampleEnv}}
+\newenvironment{nonexample*}{\begin{nonexampleEnv*}\pushQED{\qed}}{\popQED\end{nonexampleEnv*}}
+\newenvironment{nonexample+}[1]{\def\oktheorem@parameter{#1}\begin{nonexampleEnv+}}{\qed\end{nonexampleEnv+}}
+\OKTheoremAddReferences{nonexample}{Non-example}
+
+\newtheorem{counterexampleEnv}[exampleEnv]{Counter-example}
+\newtheorem*{counterexampleEnv*}{Counter-example}
+\newtheorem*{counterexampleEnv+}{Counter-example \oktheorem@parameter}
+\newenvironment{counterexample}{\begin{counterexampleEnv}\pushQED{\qed}}{\popQED\end{counterexampleEnv}}
+\newenvironment{counterexample*}{\begin{counterexampleEnv*}\pushQED{\qed}}{\popQED\end{counterexampleEnv*}}
+\newenvironment{counterexample+}[1]{\def\oktheorem@parameter{#1}\begin{counterexampleEnv+}\pushQED{\qed}}{\popQED\end{counterexampleEnv+}}
+\OKTheoremAddReferences{counterexample}{Counter-example}
+
+\theoremstyle{plain}
+
+\newcommand\declaretheorem[2]{%
+  \newtheorem{#1}[definition]{#2}%
+  \newtheorem*{#1*}{#2}%
+  \newtheorem*{#1Env+}{#2 \oktheorem@parameter}%
+  \newenvironment{#1+}[1]{\def\oktheorem@parameter{##1}\begin{#1Env+}}{\end{#1Env+}}%
+  \OKTheoremAddReferences{#1}{#2}%
+}
+
+
+\declaretheorem{theorem}{Theorem}
+\declaretheorem{corollary}{Corollary}
+\declaretheorem{lemma}{Lemma}
+\declaretheorem{proposition}{Proposition}
+\declaretheorem{hypothesis}{Hypothesis}
+\declaretheorem{conjecture}{Conjecture}
+\declaretheorem{assumption}{Assumption}
+\declaretheorem{question}{Question}
+
+\newcounter{oktheorem-inproof}
+\setcounter{oktheorem-inproof}{0}
+\newcommand\terminateproof{%
+  \ifthenelse{\value{oktheorem-inproof}=1}%
+  {%
+    \hfill$\blacksquare$\par%
+  }
+  {% else
+    % nothing
+  }%
+  \setcounter{oktheorem-inproof}{0}%
+}
+
+\renewenvironment{proof}[1][]{%
+\setcounter{oktheorem-inproof}{1}%
+		\par\noindent%
+		{\bf Proof {#1}}%
+		\par\noindent%
+}{%
+		\terminateproof{}%
+    \goodbreak%
+	}
