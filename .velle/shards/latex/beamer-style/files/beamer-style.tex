@@ -1,0 +1,55 @@
+% \usepackage[T1]{fontenc}
+% \usepackage[tt=false, type1=true]{libertine}
+% \usepackage[varqu]{zi4}
+
+\documentclass[10pt, english, xcolor=dvipsnames, professionalfonts]{beamer}
+\mode<presentation> {
+	\usetheme{Copenhagen}
+	\usecolortheme{beaver}
+}
+
+\usepackage[
+    backend=biber,
+    style=numeric-comp,
+    sortcites=true
+  ]{biblatex}
+
+
+% https://tex.stackexchange.com/questions/66465/how-to-get-actual-values-of-colour-theme-colours-in-beamer
+\newcommand{\extractHTML}[1]{\extractcolorspecs{#1}{\model}{\mycolor} \convertcolorspec{\model}{\mycolor}{HTML}\printcol \printcol}
+
+\newcommand{\ccft}[3]{
+\usebeamercolor{#1}
+\definecolor{#2}{named}{fg}
+\definecolor{#3}{named}{bg}
+}
+
+\ccft{frametitle}{frametitle fg}{frametitle bg}
+
+\definecolor{blue-triad}{HTML}{007DCC}
+\definecolor{yellow-triad}{HTML}{00CC3A}
+
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue-triad,
+    linkcolor=,
+    urlcolor=blue-triad,
+    pdfpagemode=UseNone,
+}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{headline}{}
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{enumerate subitems}[default]
+\setbeamertemplate{page number in head/foot}[framenumber]
+\setbeamertemplate{itemize item}[triangle]
+% \setbeamertemplate{itemize subitem}[triangle]
+\setbeamertemplate{itemize subitem}\{{\textendash}}
+\setbeamercolor{item}{fg=frametitle fg}
+\setbeamercolor{structure}{fg=frametitle fg}
+
+\setbeamercolor{block title}{fg=white, bg=blue-triad!75!black}
+\setbeamercolor{block body}{parent=normal text, use=block title, bg=block title.bg!10!bg}
+
+\setbeamercolor{block title example}{fg=white, bg=yellow-triad!75!black}
+\setbeamercolor{block body example}{parent=normal text, use=block title example, bg=block title example.bg!10!bg}

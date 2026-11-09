@@ -1,0 +1,9 @@
+name        = "latex/beamer-style"
+description = ""
+params      = []
+requires    = []
+
+[[file]]
+src  = "files/beamer-style.tex"
+dest = "beamer-style.tex"
+mode = "create"   # create | append | region
